@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+body {
+    background: aqua;
+}
+
+.container {
+    max-width: 420px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+
+    h1 {
+        margin-bottom: 20px;
+        text-transform: capitalize;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .hedr {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input {
+            width: 300px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid gray;
+
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+
+        button {
+            background: blueviolet;
+            padding: 8px 15px;
+            border-radius: 5px;
+            color: #fff;
+            border: 1px solid blueviolet;
+            font-size: 22px;
+            cursor: pointer;
+
+            &:hover {
+                background: #fff;
+                color: blueviolet;
+            }
+        }
+    }
+
+    #ui {
+        margin-bottom: 50px;
+        .div1 {
+            border: 1px solid #000;
+            width: 300px;
+            border-radius: 5px;
+            // width: 265px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all .7s linear;
+            background: rgba(190, 185, 185, 0.344);
+            margin-top: 15px;
+            text-transform: capitalize;
+
+            p {
+                font-weight: bold;
+                padding: 5px 8px 5px 8px;
+                margin: 5px 0;
+            }
+
+
+            a {
+                display: none;
+                text-align: center;
+                padding: 0 8px 5px 8px;
+                background: red;
+                border-radius: 0 5px 5px 0;
+
+                img {
+                    margin-top: 8px;
+                }
+            }
+
+            &:hover {
+                a {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #clear {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px 12px;
+            background: blueviolet;
+            color: #fff;
+            text-transform: capitalize;
+            border: 1px solid blueviolet;
+            border-radius: 5px;
+
+            &:hover {
+                background: #fff;
+                color: blueviolet;
+            }
+        }
+    }
+}
